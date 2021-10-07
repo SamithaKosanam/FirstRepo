@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/jorda/CLionProjects/Analyzer/StringData.h
+string
+-
+vector
+-
+chrono
+-
+
+C:/Users/jorda/CLionProjects/Analyzer/main.cpp
+iostream
+-
+vector
+-
+StringData.h
+C:/Users/jorda/CLionProjects/Analyzer/StringData.h
+
