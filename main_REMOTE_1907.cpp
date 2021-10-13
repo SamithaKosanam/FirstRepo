@@ -1,8 +1,4 @@
 #include <iostream>
-<<<<<<< HEAD
-#include <vector>
-#include "StringData.h"
-=======
 #include <string>
 #include <vector>
 #include <chrono>
@@ -30,7 +26,6 @@ inline std::vector<std::string>& getStringData(){
     return stringDataSet;
 }
 
->>>>>>> 7ac2c65f9e21d4e95735c987a515132074c2e3f7
 using namespace std;
 
 int linearSearch(vector<string> dataSet, string element);
@@ -38,46 +33,6 @@ int linearSearch(vector<string> dataSet, string element);
 int binarySearch(vector<string> dataSet, string element);
 
 int main() {
-<<<<<<< HEAD
-
-    vector<string> stringData = getStringData();
-
-    auto start = chrono::system_clock::now();
-    linearSearch(stringData, "not_here");
-    auto end = chrono::system_clock::now();
-    chrono::duration <double> diff = end-start;
-    cout << "Linear search results for not_here " << diff.count() << endl;
-
-    start = chrono::system_clock::now();
-    binarySearch(stringData, "not_here");
-    end = chrono::system_clock::now();
-    diff = end-start;
-    cout << "Binary search results for not_here " << diff.count() << endl;
-
-    start = chrono::system_clock::now();
-    linearSearch(stringData, "mzzzz");
-    end = chrono::system_clock::now();
-    diff = end-start;
-    cout << "Linear search results for mzzzz " << diff.count() << endl;
-
-    start = chrono::system_clock::now();
-    binarySearch(stringData, "mzzzz");
-    end = chrono::system_clock::now();
-    diff = end-start;
-    cout << "Binary search results for mzzzz " << diff.count() << endl;
-
-    start = chrono::system_clock::now();
-    linearSearch(stringData, "aaaaa");
-    end = chrono::system_clock::now();
-    diff = end-start;
-    cout << "Linear search results for aaaaa " << diff.count() << endl;
-
-    start = chrono::system_clock::now();
-    binarySearch(stringData, "aaaaa");
-    end = chrono::system_clock::now();
-    diff = end-start;
-    cout << "Binary search results for aaaaa " << diff.count() << endl;
-=======
     // initialize dataSet string vector
     vector<string> dataSet = getStringData();
 
@@ -126,18 +81,10 @@ int main() {
     timeTaken = chrono::duration_cast<chrono::nanoseconds>(endBinarySearch-startBinarySearch);
 
     cout << "\nBinary search time for 'aaaaa': " << timeTaken.count();
->>>>>>> 7ac2c65f9e21d4e95735c987a515132074c2e3f7
 
     return 0;
 }
 
-<<<<<<< HEAD
-int linearSearch(vector<string> dataSet, string element)
-{
-    for (int i = 0; i < dataSet.size(); i++)
-    {
-        if(dataSet[i] == element)
-=======
 
 
 int linearSearch(vector<string> dataSet, string element)
@@ -145,41 +92,10 @@ int linearSearch(vector<string> dataSet, string element)
     for (int i=0;i<dataSet.size();i++)
     {
         if (dataSet.at(i) == element)
->>>>>>> 7ac2c65f9e21d4e95735c987a515132074c2e3f7
         {
             return i;
         }
     }
-<<<<<<< HEAD
-
-    return 0;
-}
-
-int binarySearch(vector<string> dataSet, string element)
-{
-    int low = 0, mid = 0;
-    int high = dataSet.size()-1;
-
-    while (high >= low)
-    {
-        mid = (low + (high-low)/2);
-
-        if (element.compare(dataSet[mid]) > 0)
-        {
-            low = mid + 1;
-        } else if (element.compare(dataSet[mid]) < 0)
-        {
-            high = mid - 1;
-        } else if (element.compare(dataSet[mid]) == 0)
-        {
-            return mid;
-        }
-    }
-
-    return 0;
-}
-
-=======
     return -1;
 }
 
@@ -200,4 +116,3 @@ int binarySearch(vector<string> dataSet, string element) {
     }
     return -1;
 }
->>>>>>> 7ac2c65f9e21d4e95735c987a515132074c2e3f7

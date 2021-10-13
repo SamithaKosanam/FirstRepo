@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/jorda/CLionProjects/Analyzer/StringData.h
+C:/Users/jorda/CLionProjects/FirstRepo/StringData.h
 string
 -
 vector
@@ -14,11 +14,19 @@ vector
 chrono
 -
 
-C:/Users/jorda/CLionProjects/Analyzer/main.cpp
+C:/Users/jorda/CLionProjects/FirstRepo/main.cpp
 iostream
 -
 vector
 -
 StringData.h
-C:/Users/jorda/CLionProjects/Analyzer/StringData.h
+C:/Users/jorda/CLionProjects/FirstRepo/StringData.h
+string
+-
+vector
+-
+chrono
+-
+string
+-
 
